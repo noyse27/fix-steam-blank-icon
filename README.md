@@ -7,28 +7,33 @@ Ref: https://github.com/mrsimb/steam_blank_icon_fix
 Note: `fix-icon-no-validation.bat` is a version of `fix-icon.bat` without error handling and it hasn't the improvments.
 It is provided NOT for actual use, but to enhance readability and ease of understanding.
 
+# Usage
 Enhanced the Steam icon fix script to automatically scan the user's desktop for Steam shortcuts and refresh the desktop after processing, eliminating the need for manual intervention.
+Just double click on the fix-steam-blank-icon.bat to get the magic done.
 
 Changes Made
-🔍 # Automatic Desktop Detection
+# 🔍 Automatic Desktop Detection
+
 Added intelligent desktop path detection that checks for both OneDrive and local desktop locations
 Supports modern Windows setups where desktop is synced to OneDrive (%USERPROFILE%\OneDrive\Desktop)
 Falls back gracefully to traditional desktop path (%USERPROFILE%\Desktop) if OneDrive is not used
 Provides clear feedback about which desktop path is being used
 
-🔄 # Automatic Desktop Refresh
+# 🔄 Automatic Desktop Refresh
+
 Implemented automatic desktop refresh functionality using VBScript and Windows Shell API
 Refreshes desktop icons after successful icon downloads (equivalent to pressing F5)
 Only refreshes when files are actually processed to avoid unnecessary operations
 Cleans up temporary files automatically
 
-🛠️ # Improved Error Handling
+# 🛠️ Improved Error Handling
+
 Enhanced validation for Steam URL detection with proper regex patterns
 Better variable initialization and cleanup between file processing
 Improved feedback messages for debugging and user information
 Added processed file counter to show script effectiveness
 
-📝 # Code Quality Improvements
+# 📝 Code Quality Improvements
 Fixed batch script syntax issues with proper escaping
 More robust file existence checking
 Cleaner variable handling and scoping
@@ -46,5 +51,6 @@ Reduced maintenance: More robust error handling prevents script failures
 ✅ Verified compatibility with traditional desktop setups
 ✅ Confirmed proper icon downloading and desktop refresh functionality
 ✅ Validated error handling for non-Steam shortcuts and missing files
-Breaking Changes
+
+# Breaking Changes
 None - the script maintains backward compatibility while adding new automatic features.
