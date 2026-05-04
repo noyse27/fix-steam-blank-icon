@@ -4,7 +4,7 @@ Fixes blank icons for Steam game shortcuts.
 
 Ref: https://github.com/mrsimb/steam_blank_icon_fix
 
-Note: `fix-icon-no-validation.bat` is a version of `fix-icon.bat` without error handling. it hasn't the enprovements neither
+Note: `fix-icon-no-validation.bat` is a version of `fix-icon.bat` without error handling and it hasn't the improvments.
 It is provided NOT for actual use, but to enhance readability and ease of understanding.
 
 Enhanced the Steam icon fix script to automatically scan the user's desktop for Steam shortcuts and refresh the desktop after processing, eliminating the need for manual intervention.
